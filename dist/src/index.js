@@ -40,7 +40,7 @@ const constants_1 = require("./constants");
 const serverService = __importStar(require("./services/server.service"));
 (() => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield mongoose_1.default.connect('mongodb+srv://sheveleff:MVbyGV7L4gd8yYAI@cluster0.rrkktgf.mongodb.net/?retryWrites=true&w=majority"');
+        yield mongoose_1.default.connect('mongodb+srv://sheveleff:MVbyGV7L4gd8yYAI@cluster0.rrkktgf.mongodb.net/?retryWrites=true&w=majority');
         serverService.server.listen(process.env.PORT || constants_1.PORT, function () {
             console.log('Сервер ожидает подключения...');
         });
